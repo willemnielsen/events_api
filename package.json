@@ -1,0 +1,19 @@
+{
+  "name": "events_api",
+  "version": "1.0.0",
+  "description": "Sends images for basketball events",
+  "main": "events.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willemnielsen/events_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willemnielsen/events_api/issues"
+  },
+  "homepage": "https://github.com/willemnielsen/events_api#readme"
+}
