@@ -4,7 +4,7 @@ const events = require('./events.json');
 const cors = require('cors');
 
 const corsOpts = {
-  origin: 'http://localhost:3000',
+  origin: 'https://coachmeewebsite-production.up.railway.app/'
 };
 
 app.use(cors(corsOpts));
