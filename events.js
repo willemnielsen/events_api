@@ -6,6 +6,7 @@ const cors = require('cors');
 app.use(cors());
 
 app.get('/events', (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
   console.log('GET request received');
   console.log(events);
   res.json(events);
