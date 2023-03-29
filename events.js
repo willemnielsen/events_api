@@ -5,14 +5,6 @@ const cors = require('cors');
 
 const corsOpts = {
   origin: 'http://localhost:3000',
-
-  methods: [
-    'GET'
-  ],
-
-  allowedHeaders: [
-    'Content-Type',
-  ],
 };
 
 app.use(cors(corsOpts));
@@ -24,6 +16,7 @@ app.get('/events', (req, res) => {
   res.json(events);
 });
 
-app.listen(3001, () => {
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
   console.log('Server is listening on port 3001');
 });
