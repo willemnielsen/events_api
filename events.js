@@ -3,10 +3,22 @@ const app = express();
 const events = require('./events.json');
 const cors = require('cors');
 
-app.use(cors());
+const corsOpts = {
+  origin: 'http://localhost:3000',
+
+  methods: [
+    'GET'
+  ],
+
+  allowedHeaders: [
+    'Content-Type',
+  ],
+};
+
+app.use(cors(corsOpts));
 
 app.get('/events', (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
   console.log('GET request received');
   console.log(events);
   res.json(events);
